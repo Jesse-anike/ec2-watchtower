@@ -1,0 +1,21 @@
+{
+  "Reservations": [
+    {
+      "Instances": [
+        {
+          "InstanceId": "i-sample123",
+          "State": {"Name": "running"},
+          "PublicIpAddress": "203.0.113.20",
+          "PublicDnsName": "ec2-203-0-113-20.example.invalid",
+          "MetadataOptions": {"HttpTokens": "optional"}
+        },
+        {
+          "InstanceId": "i-sample456",
+          "State": {"Name": "stopped"},
+          "MetadataOptions": {"HttpTokens": "required"},
+          "IamInstanceProfile": {"Arn": "arn:aws:iam::000000000000:instance-profile/sample-role"}
+        }
+      ]
+    }
+  ]
+}
